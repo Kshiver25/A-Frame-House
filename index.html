@@ -1,0 +1,58 @@
+<html`>
+  <html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+  <body>
+    
+    <a-scene>
+      <!-- Sky -->
+      <a-sky color="#c6e5ff"></a-sky>
+      <!-- ground -->
+      <a-box position="0 -4.5 0" width="50" depth="50" height="0.1" color="#333"></a-box>
+
+      <a-scene>
+        <a-assets>
+         <img id="aquariumwall" src="assets/aquarium wall.jpeg">
+
+        </a-assets>
+
+        <!-- Left wall -->
+        <a-box position="-1.5 0 -2.5" rotation="0 90 0" width="1" height="3" depth="0.1"  src="#aquariumwall"></a-box>
+        <!-- Left wall  -->
+        <a-box position="-1.5 0 -.5" rotation="0 90 0" width="1" height="3" depth="0.1"  src="#aquariumwall"></a-box>
+        <!-- left wall top -->
+        <a-box position="-1.5 1 -1.5" rotation="0 90 0" width="1" height="1" depth="0.1"  src="#aquariumwall"></a-box>
+
+        <!-- Right wall -->
+        <a-box position="1.5 0 -1.5" rotation="0 90 0" width="3" height="3" depth="0.1" src="#aquariumwall"></a-box>
+
+        <!-- Front wall -->
+        <a-box position="0 0 -3" rotation="0 0 0" width="3" height="3" depth="0.1"  src="#aquariumwall"></a-box>
+
+        <!-- Back wall -->
+        <a-box position="0 0 0" rotation="0 180 0" width="3" height="3" depth="0.1"  src="#aquariumwall"></a-box>
+
+        <!-- left roof -->
+        <a-box position="0 1.5 -3" rotation="45 0 0" width="3" height="4.3" depth="0.1"  src="#aquariumwall"></a-box>
+        <!-- Right roof -->
+        <a-box position="0 1.5 0" rotation="-45 0 0" width="3" height="4.3" depth="0.1"  src="#aquariumwall"></a-box>
+        <!-- roof triangles -->
+        <a-triangle position="1.5 2.5 -1.5" width="50" height="10" scale="2 1 1" rotation="0 90 0" side="double" material="" geometry="vertexB: -0.75 -1 0; vertexC: 0.75 -1 0"  src="#aquariumwall"></a-triangle>
+        <a-triangle position="-1.5 2.5 -1.5" width="50" height="10" scale="2 1 1" rotation="0 90 0" side="double" material="" geometry="vertexB: -0.75 -1 0; vertexC: 0.75 -1 0"  src="#aquariumwall"></a-triangle>
+        <!-- window -->
+        <a-box position="1.05 .75 -1.5" color="#808080"></a-box>
+      </a-scene>
+
+    </a-scene>
+
+    </a-scene>
+  </body>
+
+
+
+
+
+  </html>
